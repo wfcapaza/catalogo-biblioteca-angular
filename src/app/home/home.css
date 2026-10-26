@@ -1,0 +1,10 @@
+.contenedor {
+    padding: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.filtro {
+    width: 100%;
+    margin-top: 20px;
+}

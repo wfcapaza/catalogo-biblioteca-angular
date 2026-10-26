@@ -1,0 +1,100 @@
+<div class="detalle-contenedor">
+
+  @if (libroSeleccionado) {
+
+    <mat-card class="detalle-card">
+
+      <mat-card-header>
+
+        <mat-card-title>
+
+          Ficha Técnica:
+          {{ libroSeleccionado.id }}
+
+        </mat-card-title>
+
+        <mat-card-subtitle>
+
+          {{ libroSeleccionado.categoria }}
+
+        </mat-card-subtitle>
+
+      </mat-card-header>
+
+
+      <mat-divider></mat-divider>
+
+
+      <mat-card-content>
+
+        <p>
+
+          <strong>Título:</strong>
+
+          {{ libroSeleccionado.titulo }}
+
+        </p>
+
+
+        <p>
+
+          <strong>Autor:</strong>
+
+          {{ libroSeleccionado.autor }}
+
+        </p>
+
+
+        <p>
+
+          <strong>Categoría:</strong>
+
+          {{ libroSeleccionado.categoria }}
+
+        </p>
+
+
+        <p>
+
+          <strong>Ejemplares disponibles:</strong>
+
+          {{ libroSeleccionado.disponibles }}
+
+        </p>
+
+      </mat-card-content>
+
+
+      <mat-card-actions align="end">
+
+        <button
+          mat-stroked-button
+          routerLink="/">
+
+          ← Volver al catálogo
+
+        </button>
+
+      </mat-card-actions>
+
+    </mat-card>
+
+  }
+
+  @else {
+
+    <h2>
+      El libro solicitado no existe.
+    </h2>
+
+    <button
+      mat-raised-button
+      routerLink="/">
+
+      Volver al catálogo
+
+    </button>
+
+  }
+
+</div>

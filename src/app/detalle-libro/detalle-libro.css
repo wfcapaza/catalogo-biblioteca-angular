@@ -1,0 +1,16 @@
+.detalle-contenedor {
+    padding: 40px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.detalle-card {
+    width: 100%;
+    max-width: 550px;
+}
+
+mat-card-content {
+    padding-top: 20px;
+    font-size: 1.05rem;
+}

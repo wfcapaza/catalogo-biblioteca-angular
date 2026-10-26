@@ -1,0 +1,66 @@
+<div class="contenedor">
+
+  <mat-card>
+
+    <mat-card-header>
+
+      <mat-card-title>
+        Catálogo de Biblioteca Universitaria
+      </mat-card-title>
+
+      <mat-card-subtitle>
+        Consulte los libros disponibles de la facultad
+      </mat-card-subtitle>
+
+    </mat-card-header>
+
+
+    <mat-card-content>
+
+      <mat-form-field
+        appearance="outline"
+        class="filtro">
+
+        <mat-label>
+          Filtrar por categoría
+        </mat-label>
+
+        <mat-select
+          value="Todas"
+          (selectionChange)="filtrarPorCategoria($event.value)">
+
+          <mat-option value="Todas">
+            Todas
+          </mat-option>
+
+          <mat-option value="Programación">
+            Programación
+          </mat-option>
+
+          <mat-option value="Bases de Datos">
+            Bases de Datos
+          </mat-option>
+
+          <mat-option value="Redes">
+            Redes
+          </mat-option>
+
+          <mat-option value="Ciencias Básicas">
+            Ciencias Básicas
+          </mat-option>
+
+        </mat-select>
+
+      </mat-form-field>
+
+
+      <app-tabla-libros
+        [lista]="librosEnPantalla">
+      </app-tabla-libros>
+
+
+    </mat-card-content>
+
+  </mat-card>
+
+</div>
