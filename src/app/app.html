@@ -1,2 +1,21 @@
+<mat-toolbar color="primary" class="barra-navegacion">
 
-<router-outlet />
+    <span> Biblioteca Universitaria </span>
+
+    <span class="espacio"></span>
+
+    <button mat-button routerLink="/">
+        Catálogo
+    </button>
+
+    <button mat-button routerLink="/dashboard">
+        Dashboard
+    </button>
+
+</mat-toolbar>
+
+<main class="contenido">
+
+    <router-outlet></router-outlet>
+
+</main>

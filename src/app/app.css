@@ -1,0 +1,14 @@
+.barra-navegacion {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.espacio {
+    flex: 1 1 auto;
+}
+
+.contenido {
+    min-height: calc(100vh - 64px);
+    background-color: #f5f5f5;
+}

@@ -1,0 +1,63 @@
+<div class="dashboard-contenedor">
+
+    <h1> Dashboard de Biblioteca </h1>
+
+    <p class="subtitulo">
+        Resumen del estado actual del catálogo
+    </p>
+
+
+    <div class="graficos">
+        <!-- GRÁFICO DE BARRAS -->
+
+        <mat-card class="tarjeta-grafico">
+
+            <mat-card-header>
+
+                <mat-card-title>
+                    Inventario por Categoría
+                </mat-card-title>
+
+                <mat-card-subtitle>
+                    Total de unidades disponibles
+                </mat-card-subtitle>
+
+            </mat-card-header>
+
+
+            <mat-card-content>
+
+                <canvas #graficoBarras>
+                </canvas>
+
+            </mat-card-content>
+
+        </mat-card>
+
+
+        <!-- GRÁFICO DE DONA -->
+
+        <mat-card class="tarjeta-grafico">
+
+            <mat-card-header>
+
+                <mat-card-title>
+                    Estado de Salud del Catálogo
+                </mat-card-title>
+
+                <mat-card-subtitle>
+                    Stock crítico vs saludable
+                </mat-card-subtitle>
+
+            </mat-card-header>
+
+            <mat-card-content>
+
+                <canvas #graficoDona>
+                </canvas>
+
+            </mat-card-content>
+
+        </mat-card>
+    </div>
+</div>
